@@ -7,6 +7,7 @@ public class Mascota {
   private String comidaFavorita;
 
   public static void main(String[] args) {
+    System.out.println("=========Perro=========");
     Perro miPerro = new Perro();
     miPerro.setNombre("Baco");
     miPerro.setColor("Blanco Y Negro");
@@ -17,10 +18,37 @@ public class Mascota {
     miPerro.setVelocidadAlCorrer(20);
     miPerro.setPeso(15);
 
-    System.out.println("=========Perro=========");
     miPerro.comer();
     miPerro.correr();
-    miPerro.toString();
+    System.out.println(miPerro.toString());
+
+    System.out.println("=========Loro=========");
+    Loro miLoro = new Loro();
+    miLoro.setNombre("Paco");
+    miLoro.setColor("Amarillo");
+    miLoro.setEdad(2);
+    miLoro.setComidaFavorita("Alpiste");
+    miLoro.setSabeHablar(true);
+    miLoro.setVelocidadDeVuelo(40);
+    miLoro.setPeso(10);
+
+    miLoro.comer();
+    miLoro.volar();
+    System.out.println(miLoro.toString());
+
+    System.out.println("=========Pez=========");
+    Pez miPez = new Pez();
+    miPez.setNombre("Nemo");
+    miPez.setColor("Azul");
+    miPez.setEdad(2);
+    miPez.setComidaFavorita("larvas");
+    miPez.setNroDeAletas(2);
+    miPez.setEsDeAguaSalada(true);
+    miPez.setVelocidadAlNadar(100);
+
+    miPez.comer();
+    miPez.nadar();
+    System.out.println(miPez.toString());
   }
 
   @Override

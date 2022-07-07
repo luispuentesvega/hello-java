@@ -10,7 +10,7 @@ public class Pez extends Mascota {
     System.out.println("[Pez] Su mascota " + this.getNombre() + " esta comiendo " + this.getComidaFavorita());
   }
 
-  private void volar() {
+  protected void nadar() {
     System.out.println(
         "[Pez] La velocidad al nadar de su mascota " + this.getNombre() + " es " + this.velocidadAlNadar);
   }
